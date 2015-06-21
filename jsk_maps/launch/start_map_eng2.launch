@@ -17,7 +17,8 @@
   <node name="publish_spot" pkg="roseus" type="roseus"
         args="$(find jsk_maps)/tools/publish_spot.l"
         machine="$(arg MACHINE)"
-        output="screen" >
+        output="screen"
+	if="false">
     <param name="~scene" value="eng2" />
   </node>
   
